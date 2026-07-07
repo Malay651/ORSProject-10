@@ -26,7 +26,7 @@ import com.rays.service.UserServiceInt;
  * REST controller handling authentication operations: login, sign-up, logout,
  * and forgot password. All endpoints are publicly accessible under {@code /Auth}.
  *
- * @author Ajay Pratap Kerketta
+ * @author malay dongre
  */
 @RestController
 @RequestMapping(value = "Auth")
@@ -66,6 +66,7 @@ public class LoginCtl extends BaseCtl<UserDTO, UserForm, UserServiceInt> {
 
 			res.setSuccess(true);
 			res.addData(dto);
+			
 			res.addResult("loginId", dto.getLoginId());
 			res.addResult("role", dto.getRoleName());
 			res.addResult("fname", dto.getFirstName());

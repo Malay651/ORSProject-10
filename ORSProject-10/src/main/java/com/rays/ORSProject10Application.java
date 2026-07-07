@@ -37,7 +37,7 @@ public class ORSProject10Application {
 
 //			@Override
 //			public void addInterceptors(InterceptorRegistry registry) {
-//				registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns("/Auth/**");
+//				registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns("/Auth/**");kkkk
 //			}
 		};
 		return w;

@@ -169,6 +169,7 @@ public class BaseCtl<T extends BaseDTO, F extends BaseForm, S extends BaseServic
 		if (id > 0 && exId == null) {
 			res.addMessage("data added successfully");
 			res.addData(dto);
+			
 		} else if (id == dto.getId()) {
 			res.addMessage("data updated successfully");
 			res.addData(dto);
