@@ -8,7 +8,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: project-10
+      MYSQL_DATABASE: project10
       MYSQL_USER: orsuser
       MYSQL_PASSWORD: orspass
       
@@ -35,7 +35,7 @@ services:
       mysql:
         condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/project-10
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/project10
       SPRING_DATASOURCE_USERNAME: orsuser
       SPRING_DATASOURCE_PASSWORD: orspass
     ports:
