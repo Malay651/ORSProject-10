@@ -35,9 +35,9 @@ services:
       mysql:
         condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/project10
-      SPRING_DATASOURCE_USERNAME: orsuser
-      SPRING_DATASOURCE_PASSWORD: orspass
+      DATASOURCE_URL: jdbc:mysql://mysql:3306/project10
+      DATASOURCE_USERNAME: root
+      DATASOURCE_PASSWORD: root
     ports:
       - "8080:8080"
 
